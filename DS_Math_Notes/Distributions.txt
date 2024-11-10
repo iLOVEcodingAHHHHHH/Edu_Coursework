@@ -1,0 +1,31 @@
+⌠ integral 244
+
+
+Probability Mass Function (PMF): Probability of specific value for discrete variable.
+
+f(x) = P[X=x]
+
+rules...
+X is discrete random variable
+0<=P(Xi)<=1 (all probabilities between 0 and 1)
+P(X) = 1 (sum of probabilities)
+
+x is specific value
+
+Uniform dist means all P(X) are level or equal (dice roll)
+
+f(x) = P[X=x] = P[X=CEO] (obvious 1%, example for formulation)
+
+
+Probability Density Function (PDF)
+
+P(a<=x<=b)=⌠
+
+rules
+f(x) >0 (no negative x permitted)
+⌠1/0 f(x) dx = 1 (is calc but rule is integral must = 1)
+
+continous random variable
+odds of email sent at exact instant used as example, is infinitely small
+PDF used for interval ranges, within 60-120 seconds
+P[1<X<2] = ⌠b/a f(x) dx

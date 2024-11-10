@@ -1,0 +1,3 @@
+cov(x,y) = 1/n*Σ(Xi-xbar)(Yi-ybar) recall that variance formula is about the same, except x section is ^2, for covariance we replace this with (Yi-ybar)
+or
+(xi * yi)bar - (xbar * ybar) 

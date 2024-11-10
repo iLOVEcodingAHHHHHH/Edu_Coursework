@@ -1,0 +1,60 @@
+µ 0181
+Σ 228
+σ 229
+
+Σ = √Σ (xi-μ)2 * P (xi) stddev
+
+
+
+P() represents probability of it's contents P(A) is the probability that event A will occure.
+Probability is reported as a value between 0 and 1(inclusive), mult by 100 for percentage
+Counterpart is represented by P(A'), this is the complement event, or P of A prime or even A ^ c
+Mathmatically, then,    P(A) + P(A') = 1,    or P(A) = 1 - P(A')
+
+Conditional probability is written in the form P(A|B) and depicts the probability that A will occure given that event B has already occured ie P(Event will occure|Event has occured)
+
+∩ Intersection (And)
+u Union (Or)
+
+Addition Rule of Probability:
+P(A U B) = P(A) + P(B) - P(A ∩ B)
+P(A or B) = P(A) + P(B) - P(A and B)
+
+Law of Large numbers - Experimental probability converges with expected probability as samples are taken
+
+Multiplication of Probability
+Independent: P(A ∩ B) = P(A) * P(B)
+Dependent: P(A ∩ B) = P(A) * P(B|A)
+
+Bayes' Theorem
+P(A|B) = P(B|A)*P(A) / P(B)
+
+Discrete Probability
+E(X) = µx = mean
+σ^2 of X = nΣ/i=1(Xi - µ)^2 *P(Xi)
+with mean and variance I can calculate values like coinflips above 3.7 or between 1and 2.5 times landing heads even with descrete variables.
+
+Shifting a dataset
+mean = mean + k
+median = median + k
+mode = mode + k
+range, IQR, σ all unchanged by shifting
+
+Scaling a dataset
+All attributes are multiplied by k (5, 5, 6) becomes (10, 10, 6) and std iqr range blah blah bllah... all multiplied by 2
+
+COMBINATIONS OF_RANDOM_VIARIABLES
+Populations:
+[1,2,2,3]
+[2,3,5,6]
+both have N = 4 (population)
+1+2+2+3 = 8/N = µ = 2
+µ =(1-2)^2.2and2.(3-2)^2 / N = 2/4 = 1/2
+σ = µ^1/2 = 2^.5
+
+(Must be independent, converted to matching units (dollars, hours...))
+Combination: Sum = X+Y Dif = X-Y
+Mean       µ sum = µx+µy µ dif = µx-µy
+var        σ^2 sum and dif = σx^2 + σy^2 (variance is preserved regardless of operation)
+
+The σ must be discovered by taking the square root of the variance
