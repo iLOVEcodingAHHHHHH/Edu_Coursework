@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af8ba44c-9914-4dbb-824b-c98fe2972b73" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/100d31.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/data/french_words.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/data/words_to_learn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/images/card_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/images/card_front.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/images/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/images/wrong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100d31/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day30/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/S12_OOP_Tic_Tac_Toe-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/S13_inheritance_assgnmnt-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/Section9DiceGameOOP'd-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/Section_13_debug_assgnmnt-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/coursework_using_jupyter_1o2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/coursework_using_jupyter_2o2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/.ipynb_checkpoints/scratchpad-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Assignment+-+Vending+Machines+and+Method+Inheritance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Course Completion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Mini+Project+-+Vending+Machines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/.ipynb_checkpoints/Inheritance+(Attributes)+-+Section+Handout-checkpoint.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Assignment+-+Add+Properties+to+a+Class.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Backpack+Class+with+pass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Class+Attributes+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Class+Attributes.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Docstrings+in+Python.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Encapsulation+and+Abstraction.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Getters,+Setters,+and+Properties.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Inheritance+(Attributes).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Instances+and+Instance+Attributes.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Objects+in+Memory.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Code+-+Special+Methods+in+Python.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/17535298_afee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/38230490_0487_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/7f85a56ba4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/analytics.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/box-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/bundle.min.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/client" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/common-app-css.a4f6a80f067b63eee8d7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/common-desktop-server-side.d7c9397e7fa1779345d4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/course-landing-page-lazy.686af1398a5142d9e19f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/course-taking-server-side.563a87ef81377e8e43a0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/course-taking-udlite-app.274926a5dfbc73d1339a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/datadog-rum.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/entry-main-manifest.13a10f99060acfed30f3.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/entry-main-vendor.fafd8f3894ecff7716ed.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/entry-main.33c71d283d4218ebca97.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/entry-main.6d7c8ae7a0e3f4ef1ec0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/eventbrite-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/gtm.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/icon-spritemap.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/inner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/jsi18n-en-us.59586086f8d24a7a8964.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/logo-udemy-inverted.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/m-outer-15a2b40a058ddff1cffdb63779fe3de1.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/m-outer-3437aaddcdf6922d623e172c2d6f9278.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/nasdaq-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/netapp-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/otBannerSdk.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/otSDKStub.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/out-4.5.43.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/powered_by_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/s.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/saved_resource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/thumb-sprites.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/udemy-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/v3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Course_ Python OOP - Object Oriented Programming for Beginners _ Udemy_files/volkswagen-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Encapsulation+and+Abstraction+-+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Inheritance+(Attributes)+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Instances+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Introduction+to+Classes+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Objects+in+Memory+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Properties+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Python+OOP+-+Dice+Game+Project+Description+-+No+Highlight.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Python+OOP+-+Dice+Game+Project+Description.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Resources/Special+Methods+-+Section+Handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/S12_OOP_Tic_Tac_Toe.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/S13_inheritance_assgnmnt.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Section9DiceGameOOP'd.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Section_13_debug_assgnmnt.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Study+Guide.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/coursework_using_jupyter_1o2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/coursework_using_jupyter_2o2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/scratchpad.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OOP Refresher/war.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/.ipynb_checkpoints/NB_08_blank_start-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Numpy_Basics/Numpy_Basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Python_Basics/Python_Basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/NB_01_Descriptive Statistics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/NB_02_Distributions.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/NB_03_Regression_Intro.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/SP500_pop.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/bud_vs_rev.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/movies_metadata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/sample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Appendix_Statistics/Video_Lectures_NBs/sample2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_01.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_01_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_02.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_02_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_03.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_03_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_04.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_04_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_05.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_05_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_06.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_06_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_07.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_07_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_08.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_08_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_09.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/Exercise_09_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Coding_Exercises/cars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_01_Pandas_Basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_02_Pandas_Series.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_03_Pandas_Index_Objects.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_04_DataFrame_Basics_II.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_05_Manipulating_Values_in_DataFrame.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_06_DataFrame_Basics_III.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/NB_07_Visualization_with_Matplotlib.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/summer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/summer_2012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part1/Video_Lecture_NBs/titanic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_10.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_10_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_11.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_11_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_12.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_12_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_13.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_13_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_14.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_14_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_15.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_15_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_16.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/Exercise_16_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/ath_2008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/ath_2012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars_clean.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars_imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars_jap.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars_raw.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/cars_unclean.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/dictionary.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/mean_mpg.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Coding_Exercises/summer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/.ipynb_checkpoints/NB_08_Importing CSV Files-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/.ipynb_checkpoints/NB_08_from_scratch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/.ipynb_checkpoints/NB_09_from_scratch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/.ipynb_checkpoints/titanic-checkpoint.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_08_Importing CSV Files.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_08_from_scratch.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_09_Importing Excel Files.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_09_from_scratch.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_10_Importing Data from Web.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_11_Cleaning Data.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_12_Merging Joining Concat.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_13_Groupby.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_14_Reshaping DataFrames.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_15_Data Preparation Feature Creation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/NB_16_Seaborn_Basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/men2004.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/men2004_det.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/men2008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/men2008_det.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/sales.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer_2012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer_clean.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer_imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer_imp.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/summer_raw.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/table1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/table2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/table_2012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/titanic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/titanic_clean.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/titanic_imp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/titanic_raw.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/topfive_2004.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/topfive_2008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/wik_1976.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part2/Video_Lecture_NBs/wik_1996.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Data_Aggregation_Challenge/Comprehensive_Project_Challenge_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Data_Aggregation_Challenge/summer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Data_Aggregation_Challenge/wik_1976.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Data_Aggregation_Challenge/wik_1996.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Explanatory_DataAnalysis_Challenge/Explanatory_DataAnalysis_Challenge.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Explanatory_DataAnalysis_Challenge/Explanatory_DataAnalysis_Challenge_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Explanatory_DataAnalysis_Challenge/dictionary.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Explanatory_DataAnalysis_Challenge/summer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part3/Explanatory_DataAnalysis_Challenge/winter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Coding_Exercises/Exercise_17.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Coding_Exercises/Exercise_17_Solution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Coding_Exercises/us_stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Video_Lecture_NBs/NB_17_TimeSeries Basics.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Video_Lecture_NBs/NB_18_Financial Time Series.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Video_Lecture_NBs/stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part4/Video_Lecture_NBs/temp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part5/BonusProject_MachineLearning.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part5/Regression_Classification.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part5/california.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Course_Materials_Part5/housing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/NB_08_blank_start.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Pandas_Version_1_0_UPDATE/Pandas_Version_1_0.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Pandas_Version_1_0_UPDATE/players.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Pandas_Version_1_0_UPDATE/players2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Pandas_Version_1_0_UPDATE/players3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PandasBootcamp/Pandas_Version_1_0_UPDATE/titanic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Cheat_sheets/Python+Cheatsheets+PDF.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/Todo_input_basics-review_scrap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/Todo_input_basics-review_scrap/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Python_BC_60_day/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/.ipynb_checkpoints/S8Pandas-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/.ipynb_checkpoints/S9MatPlotLib-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/.ipynb_checkpoints/my_picture-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/.ipynb_checkpoints/s10Seaborn-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/Exercises/.ipynb_checkpoints/07-Seaborn Exercises-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/Exercises/07-Seaborn Exercises.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/S15linreg/.ipynb_checkpoints/WORKfile-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/S15linreg/USA_Housing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/S15linreg/WORKfile.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/S8Pandas.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/S9MatPlotLib.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/my_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../py4DSnMLcamp/s10Seaborn.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2owHwGrzN2NLPXcR4ml7FwXGdD2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Education/Git_workspace/100days_python_minis/100d33/a/pythonProject"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af8ba44c-9914-4dbb-824b-c98fe2972b73" name="Changes" comment="" />
+      <created>1731773954886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731773954886</updated>
+    </task>
+    <servers />
+  </component>
+</project>
