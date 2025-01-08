@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="94c3b056-91c0-4ba7-afb9-c36fc5be0a39" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../100d41/2.1 Heading Element/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d41/2.1 Heading Element/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d41/2.2+Paragraph+Element/2.2 Paragraph Element/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d41/2.2+Paragraph+Element/2.2 Paragraph Element/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d41/introhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d41/introhtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d42/3.1+Nesting+and+Indentation/3.1 Nesting and Indentation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d42/3.1+Nesting+and+Indentation/3.1 Nesting and Indentation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d42/htmlintroday2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d42/htmlintroday2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d42/quickrundown.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d42/quickrundown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/external.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/external.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/inline.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/inline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/internal.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/internal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.1. Adding CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../100d43/5.3 CSS Selectors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../100d43/5.3 CSS Selectors/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2r8kqhJbMYHsUjyOGyhS8rHc3uo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94c3b056-91c0-4ba7-afb9-c36fc5be0a39" name="Changes" comment="" />
+      <created>1735948282024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735948282024</updated>
+    </task>
+    <servers />
+  </component>
+</project>
