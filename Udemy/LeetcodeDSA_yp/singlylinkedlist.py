@@ -137,17 +137,16 @@ class SLL:
         return temp
 
     def reverse(self):
-        if 0 <= self.len <= 1:
+        if (0 <= self.len <= 1):
             return self
-
-        temp = self.head
-        before = None
+        
+        point = self.head
+        trail = None
         for _ in range(self.len):
-            after = temp.next
-            temp.next = before
-            before = temp
-            temp = after
-            
+            leader = point.next
+            point.next = trail
+            trail = point
+            point = leader
 
         self.head, self.tail = self.tail, self.head
         return self
