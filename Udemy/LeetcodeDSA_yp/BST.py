@@ -31,11 +31,13 @@ class BinarySearchTree:
         return False
         
 
-
-my_tree = BinarySearchTree()
-my_tree.insert(2)
-my_tree.insert(1)
-my_tree.insert(3)
-my_tree.insert(3)
-
-print(my_tree.root.right.value)
+    def contains(self, value):
+        temp = self.root
+        while temp:
+            if value < temp.value:
+                temp = temp.left
+            elif value > temp.value:
+                temp = temp.right
+            else:
+                return True
+        return False
