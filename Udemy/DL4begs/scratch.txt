@@ -1,0 +1,6 @@
+what are convolutional neural networks?
+
+what is multinomial logistic regression
+
+practice cross entropy loss and recall that tensors perform calculation
+across entire array
