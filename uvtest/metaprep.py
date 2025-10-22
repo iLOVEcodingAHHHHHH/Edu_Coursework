@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.16.5"
+__generated_with = "0.17.0"
 app = marimo.App(width="medium")
 
 
@@ -9,9 +9,10 @@ def _():
     import marimo as mo
     import polars as pl
     import altair as alt
+    import numpy as np
 
     import torch
-    import torch.nn
+    import torch.nn as nn
     import torch.nn.functional as F
     from torch.utils.data import TensorDataset, DataLoader
 
@@ -23,9 +24,8 @@ def _():
     bin_quality, # 2
     rmv_ttlsulf_outliers, # 3
     zed_features, # 4
-    rmv_cloride_abnormal_outlier, # 5
-    raw_chart, # 6
-    norm_chart, # 7
+    rmv_chloride_abnormal_outlier, # 5
+    plot_chart, # 6
 
     )
 
@@ -34,100 +34,213 @@ def _():
     url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
     filename = "winequality-red" #no extension needed (if csv, will convert to parquet, ignore extension)
     return (
+        DataLoader,
+        F,
+        TensorDataset,
+        alt,
         bin_quality,
         filename,
         mo,
-        norm_chart,
+        nn,
+        np,
         pl,
+        plot_chart,
         prep_local_file,
-        raw_chart,
-        rmv_cloride_abnormal_outlier,
+        rmv_chloride_abnormal_outlier,
         rmv_ttlsulf_outliers,
+        torch,
         url,
-        zed_features,
     )
 
 
 @app.cell
 def _(filename, prep_local_file, url):
-    filepath = prep_local_file(url, filename, ";") #1 !!!!!!!!!! this is returning only the training data (needs update to return LazyFrame instead of Path)
-    return (filepath,)
+    split_set = prep_local_file(url, filename, ";") #1
+    return (split_set,)
 
 
 @app.cell
-def _(raw_chart):
-    raw_chart  #6
+def _(pl, split_set):
+    train_lf = pl.scan_parquet(split_set[0])
+    test_lf = pl.scan_parquet(split_set[1])
+    lf = pl.concat([train_lf, test_lf])
+    train_lf.collect()
+    return lf, test_lf, train_lf
+
+
+@app.cell
+def _(lf):
+    lf.collect()
     return
 
 
 @app.cell
-def _(norm_chart):
-    norm_chart #7
+def _(bin_quality, lf, plot_chart, rmv_ttlsulf_outliers):
+    raw_lf = (
+        lf.drop('id')
+        .pipe(bin_quality)
+        .pipe(rmv_ttlsulf_outliers)
+    )
+    plot_chart(raw_lf)  #6
     return
+
+
+@app.cell
+def _(pl, rmv_ttlsulf_outliers, train_lf):
+    agg_prep_lf = train_lf.drop(['id', 'quality']).pipe(rmv_ttlsulf_outliers)
+    def normalize(lf, agg_prep_lf):
+        mean_df, std_df = pl.collect_all([agg_prep_lf.mean(), agg_prep_lf.std()])
+        temp = lf.select(['id','quality'])
+        lf = lf.select([(pl.col(c) - mean_df[c][0]) / std_df[c][0] for c in mean_df.columns])
+        lf = pl.concat([lf, temp],how='horizontal')
+        return lf
+
+    #figure out what's going on with lf.select(['id'...]) when it's dropped during definition
+    return agg_prep_lf, normalize
 
 
 @app.cell
 def _(
+    agg_prep_lf,
     bin_quality,
-    filepath,
-    pl,
-    rmv_cloride_abnormal_outlier,
-    rmv_ttlsulf_outliers,
-    zed_features,
+    normalize,
+    rmv_chloride_abnormal_outlier,
+    test_lf,
+    train_lf,
 ):
-    lf = (
-        pl.scan_parquet(filepath)
-            .pipe(rmv_ttlsulf_outliers)
-            .pipe(bin_quality)
-            .pipe(zed_features)
-            .pipe(rmv_cloride_abnormal_outlier)
-        )
-    lf.collect()
-    return (lf,)
+    norm_lf = normalize(train_lf, agg_prep_lf).pipe(bin_quality).pipe(rmv_chloride_abnormal_outlier)
+    norm_test_lf = normalize(test_lf, agg_prep_lf).pipe(bin_quality)
+    norm_lf.collect()
+    return norm_lf, norm_test_lf
 
 
 @app.cell
-def _(lf, pl):
-    labels = lf.collect().select(pl.col('quality')).to_torch()
-    features = lf.collect().select(pl.exclude('quality')).to_torch()
-    return features, labels
-
-
-@app.cell
-def _(features, labels):
-    print(labels.shape)
-    print(features.shape)
+def _(norm_lf, norm_test_lf, plot_chart):
+    plot_chart(norm_test_lf.drop(['id']))
+    norm_lf.collect_schema().len() - 1
     return
 
 
 @app.cell
-def _(pl):
-    def train_test_split_lazy(lf: pl.LazyFrame, train_fraction: float = 0.75
-                             ) -> tuple[pl.DataFrame, pl.DataFrame]:
+def _(DataLoader, TensorDataset, norm_lf, norm_test_lf, pl):
+    def loader_prep(preprocced_lf, preprocced_test_lf, batch_size=32):
+        X_train, y_train, X_test, y_test = (df.to_torch() for df in pl.collect_all([
+                                                                preprocced_lf.drop(['id', 'quality']).cast(pl.Float32),
+                                                                preprocced_lf.select(pl.col('quality') - 5).cast(pl.Float32),
+                                                                preprocced_test_lf.drop(['id', 'quality']).cast(pl.Float32),
+                                                                preprocced_test_lf.select(pl.col('quality') - 5).cast(pl.Float32)
+                                                                ]))
+        train_loader = DataLoader(TensorDataset(X_train, y_train), batch_size, shuffle=True, drop_last=True)
+        test_loader = DataLoader(TensorDataset(X_test, y_test))
+        return train_loader, test_loader
 
-        df = (lf.collect()
-            .with_columns(pl.all().shuffle(seed=1))
-            .with_row_index()
-             )
-        #returns eager split
-        df_train = df.filter(pl.col("index") < pl.col("index").max() * train_fraction)
-        df_test = df.filter(pl.col("index") >= pl.col("index").max() * train_fraction)
-        return df_train, df_test
+    train_load, test_load = loader_prep(norm_lf, norm_test_lf)
+    norm_lf.drop(['id', 'quality']).cast(pl.Float32).collect()
+    return test_load, train_load
+
+
+@app.cell
+def _(F, nn, norm_lf):
+    n_features = norm_lf.collect_schema().len() - 2
+    n_predictions = 2
+    class MyANN(nn.Module):
+
+        def __init__(self):
+            super().__init__()
+
+
+            self.input = nn.Linear(11,16)
+
+            self.fc1 = nn.Linear(16,32)
+            self.fc2 = nn.Linear(32,32)
+
+            self.output = nn.Linear(32,1)
+
+        def forward(self, x):
+            x = F.relu(self.input(x))
+            x = F.relu(self.fc1(x))
+            x = F.relu(self.fc2(x))
+            return self.output(x)
+
+    return (MyANN,)
+
+
+@app.cell
+def _(nn, np, test_load, torch, train_load):
+    def train_model(model, n_epochs = 1000, lr=0.1):
+
+        optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+        loss_calc = nn.BCEWithLogitsLoss()
+
+
+        losses= torch.zeros(n_epochs)
+        train_acc = []
+        test_acc = []
+        for i in range(n_epochs):
+
+            model.train()
+            batch_acc = []
+            batch_loss = []
+
+            for X, y in train_load:
+
+                y_hat = model(X)
+                loss = loss_calc(y_hat, y)
+
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+
+                batch_loss.append(loss.item())
+
+                batch_acc.append(100*torch.mean(((y_hat>0)==y).float()).item())
+
+            train_acc.append(np.mean(batch_acc))
+
+            losses[i] = np.mean(batch_loss)
+            model.eval()
+            test_acc_epoch = []
+            with torch.no_grad():
+                for X, y in test_load:
+                    preds = torch.sigmoid(model(X))
+                    test_acc_epoch.append(100 * torch.mean(((preds > 0.5) == y).float()).item())
+            test_acc.append(np.mean(test_acc_epoch))
+
+        return train_acc, test_acc, losses
+    return (train_model,)
+
+
+@app.cell
+def _(np):
+    def smooth(x, k=5):
+        return np.convolve(x, np.ones(k)/k, mode='same')
     return
 
 
 @app.cell
-def _():
+def _(MyANN, train_model):
+    my_model = MyANN()
+    train_acc, test_acc, loss = train_model(my_model, n_epochs=280, lr=0.1)
+    return (test_acc,)
+
+
+@app.cell
+def _(test_acc):
+    test_acc
     return
 
 
 @app.cell
-def _():
-    return
+def _(alt, pl, test_acc):
+    df = pl.DataFrame({
+        "epoch": range(1, len(test_acc)+1),
+        "accuracy": test_acc
+    })
 
-
-@app.cell
-def _():
+    alt.Chart(df).mark_line(point=True).encode(
+        x="epoch",
+        y="accuracy"
+    )
     return
 
 
@@ -140,6 +253,11 @@ def _(mo):
         - flush() and fsync() to preserve data integrity in event of power outage (resume download functionality?)
     """
     )
+    return
+
+
+@app.cell
+def _():
     return
 
 
