@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.17.0"
+__generated_with = "0.17.7"
 app = marimo.App(width="medium")
 
 
@@ -10,12 +10,14 @@ def _():
     import polars as pl
     import altair as alt
     import numpy as np
+    import copy
 
     import torch
     import torch.nn as nn
     import torch.nn.functional as F
     from torch.utils.data import TensorDataset, DataLoader
 
+    import sklearn.metrics as skm
     from sklearn.model_selection import train_test_split as ttsplit
 
     from preprocessing import ( # see numbering in preprocessing.py
@@ -39,6 +41,7 @@ def _():
         TensorDataset,
         alt,
         bin_quality,
+        copy,
         filename,
         mo,
         nn,
@@ -131,7 +134,7 @@ def _(DataLoader, TensorDataset, norm_lf, norm_test_lf, pl):
                                                                 preprocced_test_lf.select(pl.col('quality') - 5).cast(pl.Float32)
                                                                 ]))
         train_loader = DataLoader(TensorDataset(X_train, y_train), batch_size, shuffle=True, drop_last=True)
-        test_loader = DataLoader(TensorDataset(X_test, y_test))
+        test_loader = DataLoader(TensorDataset(X_test, y_test), batch_size=y_test.shape[0])
         return train_loader, test_loader
 
     train_load, test_load = loader_prep(norm_lf, norm_test_lf)
@@ -161,12 +164,11 @@ def _(F, nn, norm_lf):
             x = F.relu(self.fc1(x))
             x = F.relu(self.fc2(x))
             return self.output(x)
-
     return (MyANN,)
 
 
 @app.cell
-def _(nn, np, test_load, torch, train_load):
+def _(copy, nn, np, test_load, torch, train_load):
     def train_model(model, n_epochs = 1000, lr=0.1):
 
         optimizer = torch.optim.SGD(model.parameters(), lr=lr)
@@ -176,6 +178,7 @@ def _(nn, np, test_load, torch, train_load):
         losses= torch.zeros(n_epochs)
         train_acc = []
         test_acc = []
+        top_acc = {'best_acc': 0, 'state': None}
         for i in range(n_epochs):
 
             model.train()
@@ -204,9 +207,13 @@ def _(nn, np, test_load, torch, train_load):
                 for X, y in test_load:
                     preds = torch.sigmoid(model(X))
                     test_acc_epoch.append(100 * torch.mean(((preds > 0.5) == y).float()).item())
+                    if test_acc_epoch[-1] > top_acc['best_acc']:
+                        top_acc['best_acc'] = test_acc_epoch[-1]
+                        top_acc['state'] = copy.deepcopy(model.state_dict())
+                        top_acc['epoch'] = i
             test_acc.append(np.mean(test_acc_epoch))
 
-        return train_acc, test_acc, losses
+        return train_acc, test_acc, losses, top_acc
     return (train_model,)
 
 
@@ -220,8 +227,8 @@ def _(np):
 @app.cell
 def _(MyANN, train_model):
     my_model = MyANN()
-    train_acc, test_acc, loss = train_model(my_model, n_epochs=280, lr=0.1)
-    return (test_acc,)
+    train_acc, test_acc, loss, best_dict = train_model(my_model, n_epochs=250, lr=0.01)
+    return best_dict, my_model, test_acc
 
 
 @app.cell
@@ -246,13 +253,161 @@ def _(alt, pl, test_acc):
 
 @app.cell
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     Future features to consider:
         - async if DL -> convert - preproc multi-file (aiohttp offers significant gains over httpx for heavy traffic, async only)
         - flush() and fsync() to preserve data integrity in event of power outage (resume download functionality?)
-    """
+    """)
+    return
+
+
+@app.cell
+def _(best_dict):
+    best_dict['epoch']
+    return
+
+
+@app.cell
+def _(best_dict):
+    best_dict['state']
+    return
+
+
+@app.cell
+def _(test_load):
+    dir(test_load)
+    return
+
+
+@app.cell
+def _(best_dict, my_model, test_load):
+    X, y = next(iter(test_load))
+    my_model.load_state_dict(best_dict['state'])
+    return (X,)
+
+
+@app.cell
+def _(X, my_model, test_load):
+    best_pred = (my_model(X)>0).float()
+    lab = (test_load.dataset.tensors[1]>0).float()
+    return best_pred, lab
+
+
+@app.cell
+def _(best_pred, lab):
+    test = (best_pred == lab).float()
+    return (test,)
+
+
+@app.cell
+def _(test, torch):
+    torch.mean(test)
+    return
+
+
+@app.cell
+def _(best_dict):
+    best_dict['best_acc']
+    return
+
+
+@app.cell
+def _(best_pred, lab, pl):
+    best_df = pl.concat([pl.from_torch(best_pred, schema=['subjective']), pl.from_torch(lab, schema=['objective'])], how='horizontal')
+    best_df = best_df.with_columns(
+        pl.when((pl.col('subjective') == 1) & (pl.col('objective') == 1))
+            .then(pl.lit('TP'))
+        .when((pl.col('subjective') == 1) & (pl.col('objective') == 0))
+            .then(pl.lit('FP'))
+        .when((pl.col('subjective') == 0) & (pl.col('objective') == 1))
+            .then(pl.lit('FN'))
+            .otherwise(pl.lit('TN'))
+
+        .alias('acc')
     )
+    return (best_df,)
+
+
+@app.cell
+def _(best_df):
+    best_df['acc']
+    return
+
+
+@app.cell
+def _(alt, best_df):
+    best_heatmap = alt.Chart(best_df).mark_rect().encode(
+        y = alt.Y('subjective:O', sort='descending'),
+        x = alt.X('objective:O', sort='descending'),
+        color=alt.Color('count(acc)', scale=alt.Scale(scheme='blues'), title='matrix'),
+    ).properties(width=300, height=300)
+    best_hm_labels = (alt.Chart(best_df)
+        .transform_aggregate(
+            matrix_ct="count()",
+            groupby=['subjective', 'objective', 'acc']
+        )
+        .transform_calculate(
+            label = "datum.acc + ' (' + datum.matrix_ct + ')'"
+        )
+        .mark_text(baseline="middle")
+        .encode(
+            y = alt.Y('subjective:O', sort='descending'),
+            x = alt.X('objective:O', sort='descending', axis=alt.Axis(orient='top', labelAngle=0)),
+            text = 'label:N'
+        )
+    )
+    best_chart = best_heatmap + best_hm_labels
+    return (best_chart,)
+
+
+@app.cell
+def _(best_chart):
+    best_chart
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _(alt, best_df):
+    base = alt.Chart(best_df).encode(
+        alt.X('subjective:O', title='Predicted', scale=alt.Scale(domain=[1, 2])),
+        alt.Y('objective:O', title='Actual', scale=alt.Scale(domain=[1, 2]))
+    )
+
+    heatmap = base.mark_rect().encode(
+        color=alt.Color('acc:Q', title='Accuracy', scale=alt.Scale(scheme='blues'))
+    ).properties(
+        width=200,
+        height=200
+    ).properties(width=200, height=200)
+    return base, heatmap
+
+
+@app.cell
+def _(alt, base, heatmap):
+    text = base.mark_text(baseline='middle', fontWeight='bold').encode(
+        text=alt.Text('count():Q', format='.0f'),
+        color=alt.value('black')
+    )
+
+    chart = heatmap + text
+    chart
+    return
+
+
+@app.cell
+def _(best_df):
+    test_group = best_df.group_by(["objective", "subjective"]).count()
+    test_group
+    return
+
+
+@app.cell
+def _():
     return
 
 
